@@ -1,14 +1,14 @@
 {
-  "name": "yosay",
-  "version": "2.0.0",
-  "description": "Tell Yeoman what to say",
+  "name": "shelobsay",
+  "version": "1.0.0",
+  "description": "Tell Shelob what to say",
   "license": "BSD-2-Clause",
-  "repository": "yeoman/yosay",
-  "homepage": "yeoman.io",
-  "author": "Yeoman",
+  "repository": "ntucker/shelobsay",
+  "homepage": "ntucker.me",
+  "author": "Nathaniel Tucker",
   "bin": "cli.js",
   "engines": {
-    "node": ">=4"
+    "node": ">=7.4"
   },
   "scripts": {
     "test": "xo && mocha"
@@ -26,7 +26,8 @@
     "say",
     "box",
     "message",
-    "ansi"
+    "ansi",
+    "shelob"
   ],
   "dependencies": {
     "ansi-regex": "^2.0.0",

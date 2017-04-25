@@ -1,36 +1,35 @@
-# yosay [![Build Status](https://travis-ci.org/yeoman/yosay.svg?branch=master)](https://travis-ci.org/yeoman/yosay)
+# shelobsay
 
-> Tell Yeoman what to say
+> Tell Shelob what to say
 
 Like [cowsay](http://en.wikipedia.org/wiki/Cowsay), but less cow.
-
-![](screenshot.png)
 
 
 ## Install
 
 ```
-$ npm install --save yosay
+$ yarn add git+ssh://git@github.com/ntucker/shelobsay
 ```
 
 
 ## Usage
 
 ```js
-const yosay = require('yosay');
+const shelobsay = require('shelobsay');
 
-console.log(yosay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));
+console.log(shelobsay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));
 
 /*
-     _-----_     ╭──────────────────────────╮
-    |       |    │ Hello, and welcome to my │
-    |--(o)--|    │ fantastic generator full │
-   `---------´   │   of whimsy and bubble   │
-    ( _´U`_ )    │           gum!           │
-    /___A___\   /╰──────────────────────────╯
-     |  ~  |
-   __'.___.'__
- ´   `  |° ´ Y `
+     \_______/        ╭──────────────────────────╮
+ `.,-'\_____/`-.,'    │ Hello, and welcome to my │
+  /`..'\ _ /`.,'\     │ fantastic generator full │
+ /  /`.,' `.,'\  \    │   of whimsy and bubble   │
+/__/__/     \__\__\__ │           gum!           │
+\  \  \     /  /  /   ╰──────────────────────────╯
+ \  \,'`._,'`./  /
+  \,'`./___\,'`./
+ ,'`-./_____\,-'`.
+     /       \
  */
 ```
 
@@ -40,11 +39,13 @@ console.log(yosay('Hello, and welcome to my fantastic generator full of whimsy a
 ## CLI
 
 ```
-$ npm install --global yosay
+$ yarn global add shelobsay
 ```
 
 ```
-$ yosay --help
+$ shelobsay --help
+
+  Tell Shelob what to say
 
   Usage
     $ yosay <string>
@@ -54,19 +55,20 @@ $ yosay --help
   Example
     $ yosay 'Sindre is a horse'
 
-     _-----_
-    |       |
-    |--(o)--|    ╭──────────────────────────╮
-   `---------´   │     Sindre is a horse    │
-    ( _´U`_ )    ╰──────────────────────────╯
-    /___A___\   /
-     |  ~  |
-   __'.___.'__
- ´   `  |° ´ Y `
+     \_______/
+ `.,-'\_____/`-.,'
+  /`..'\ _ /`.,'\     ╭──────────────────────────╮
+ /  /`.,' `.,'\  \    │     Sindre is a horse    │
+/__/__/     \__\__\__ ╰──────────────────────────╯
+\  \  \     /  /  /
+ \  \,'`._,'`./  /
+  \,'`./___\,'`./
+ ,'`-./_____\,-'`.
+     /       \
 ```
 
 
 ## License
 
 [BSD license](http://opensource.org/licenses/bsd-license.php)
-Copyright (c) Google
+Copyright (c) Robinhood Markets

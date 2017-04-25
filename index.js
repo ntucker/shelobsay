@@ -9,20 +9,21 @@ const ansiRegex = require('ansi-regex')();
 const cliBoxes = require('cli-boxes');
 
 const border = cliBoxes.round;
-const leftOffset = 17;
-const defaultGreeting =
-  '\n     _-----_     ' +
-  '\n    |       |    ' +
-  '\n    |' + chalk.red('--(o)--') + '|    ' +
-  '\n   `---------´   ' +
-  '\n    ' + chalk.yellow('(') + ' _' + chalk.yellow('´U`') + '_ ' + chalk.yellow(')') + '    ' +
-  '\n    /___A___\\   /' +
-  '\n     ' + chalk.yellow('|  ~  |') + '     ' +
-  '\n   __' + chalk.yellow('\'.___.\'') + '__   ' +
-  '\n ´   ' + chalk.red('`  |') + '° ' + chalk.red('´ Y') + ' ` ';
+const leftOffset = 22;
+const defaultGreeting = '\n' +
+chalk.gray('     \\_______/        ') + '\n' +
+chalk.gray(' `.,-\'\\_____/`-.,\'    ') + '\n' +
+chalk.gray('  /`..\'\\ _ /`.,\'\\     ') + '\n' +
+chalk.gray(' /  /`.,\' `.,\'\\  \\    ') + '\n' +
+chalk.gray('/__/__/     \\__\\__\\__ ') + '\n' +
+chalk.gray('\\  \\  \\     /  /  /   ') + '\n' +
+chalk.gray(' \\  \\,\'`._,\'`./  /    ') + '\n' +
+chalk.gray('  \\,\'`./___\\,\'`./     ') + '\n' +
+chalk.gray(' ,\'`-./_____\\,-\'`.    ') + '\n' +
+chalk.gray('     /       \\        ')
 
 module.exports = (message, options) => {
-  message = (message || 'Welcome to Yeoman, ladies and gentlemen!').trim();
+  message = (message || 'Welcome to Shelob!').trim();
   options = options || {};
 
   /*
@@ -47,7 +48,7 @@ module.exports = (message, options) => {
   let topOffset = 4;
 
   // Amount of characters of the yeoman character »column«      → `    /___A___\   /`
-  const YEOMAN_CHARACTER_WIDTH = 17;
+  const YEOMAN_CHARACTER_WIDTH = 22;
 
   // Amount of characters of the default top frame of the speech bubble → `╭──────────────────────────╮`
   const DEFAULT_TOP_FRAME_WIDTH = 28;
@@ -56,7 +57,7 @@ module.exports = (message, options) => {
   let TOTAL_CHARACTERS_PER_LINE = YEOMAN_CHARACTER_WIDTH + DEFAULT_TOP_FRAME_WIDTH;
 
   // The speech bubble will overflow the Yeoman character if the message is too long.
-  const MAX_MESSAGE_LINES_BEFORE_OVERFLOW = 7;
+  const MAX_MESSAGE_LINES_BEFORE_OVERFLOW = 11;
 
   if (options.maxLength) {
     maxLength = stripAnsi(message).toLowerCase().split(' ').sort()[0].length;

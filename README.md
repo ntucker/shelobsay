@@ -33,7 +33,7 @@ console.log(shelobsay('Hello, and welcome to my fantastic generator full of whim
  */
 ```
 
-*You can style your text with [`chalk`](https://github.com/sindresorhus/chalk) before passing it to `yosay`.*
+*You can style your text with [`chalk`](https://github.com/sindresorhus/chalk) before passing it to `shelobsay`.*
 
 
 ## CLI
@@ -48,12 +48,12 @@ $ shelobsay --help
   Tell Shelob what to say
 
   Usage
-    $ yosay <string>
-    $ yosay <string> --maxLength 8
-    $ echo <string> | yosay
+    $ shelobsay <string>
+    $ shelobsay <string> --maxLength 8
+    $ echo <string> | shelobsay
 
   Example
-    $ yosay 'Sindre is a horse'
+    $ shelobsay 'Sindre is a horse'
 
      \_______/
  `.,-'\_____/`-.,'
